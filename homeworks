@@ -1,0 +1,61 @@
+Ex 1:
+
+name = (input("Ex1:Please enter your name: "))
+
+	print("Hello %s !" % name)
+
+Ex2: 
+
+print("Ex2:We will round the division to the next integer in the positive direction")
+
+	number_1 = float(input("Please enter the first number: "))
+
+	number_2 = float(input("Please enter the second number: "))
+
+
+	division = (number1/number2)
+
+	rounded_division = 0
+
+
+	if division-int(division) != 0:
+
+	    if division > 0:
+
+	        rounded_division = int(division + 1)
+
+	correct_round = round(division)
+  
+
+	print("The float value of the division is: ", division, "The rounded up division is: ", rounded_division)
+
+	print("The correct rounded version is: ", correct_round)
+
+
+Ex3:
+
+print("Ex3:We will find surface of a circle given its radius.")
+
+	radius = float(input("Please type in the circle's radius: "))
+
+
+	pi = 3.14
+
+	area = pi*radius*2
+
+	print("The area of the circle of radius %f is:%.2f" % radius)
+
+
+
+Exercise: 
+
+ax = df1.plot(x="Date", y="Close", style='r-', linewidth=0.6, label="Stock price, mean="+str(mean), title="Nike cleats vs Adidas Cleats date", figsize=(17, 9))
+df1.plot(x="Date", y="Close", style='-o', ms=7, markevery=indexes, linewidth=0, ax=ax, label="Iphone launch date")
+plt.xlabel("Dates")
+'''
+plt.figure("Nike cleats")
+plt.plot(df1["Date"], df1["Close"], 'r-', linewidth=0.6, label="Nike Stock price, mean="+str(mean))
+plt.plot(df1["Date"], df1["Close"], '-o', ms=7, markevery=indexes, linewidth=0, label="Adidas f50 lauch date")
+plt.plot(df3["Date"], df3["Close"], 'b-', linewidth=1, label="Nike")
+plt.xlabel("Dates")
+plt.legend(loc="upper left")
